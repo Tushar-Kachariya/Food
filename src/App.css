@@ -1,0 +1,83 @@
+/* ===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Base ===== */
+html, body {
+  width: 100%;
+  min-height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* ===== Root ===== */
+#root {
+  min-height: 100vh;
+}
+
+/* ===== App Wrapper ===== */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== Main Content (between Navbar & Footer) ===== */
+/* ✔ SAFE way instead of nth-child */
+.main-content {
+  flex: 1;
+  margin: 90px;
+}
+
+/* ===== Common Page Container ===== */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* ===== Login Popup Overlay ===== */
+.login-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== Utility ===== */
+.text-center {
+  text-align: center;
+}
+
+.btn {
+  padding: 10px 18px;
+  border: none;
+  background: #ff4c24;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 15px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #e43f1c;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  .main-content {
+    margin: 60px 20px;
+  }
+}

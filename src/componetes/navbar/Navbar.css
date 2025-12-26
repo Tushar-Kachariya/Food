@@ -1,0 +1,115 @@
+/* ================= NAVBAR ================= */
+
+.navbar {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 70px;
+}
+
+.navbar .logo {
+  width: 150px;
+}
+
+/* MENU */
+.navbar-manu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  color: #49577e;
+  font-size: 18px;
+}
+
+/* RIGHT */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar button {
+  background: transparent;
+  font-size: 16px;
+  color: #49577e;
+  border: 1px solid tomato;
+  padding: 10px 28px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.navbar button:hover {
+  background-color: #fff4f2;
+}
+
+.navbar .active {
+  padding-bottom: 2px;
+  border-bottom: 2px solid #49577e;
+}
+
+/* CART DOT */
+.Navbar-search-icon {
+  position: relative;
+}
+
+.Navbar-search-icon .dot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: tomato;
+  border-radius: 50%;
+  top: -6px;
+  right: -6px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1050px) {
+  .navbar {
+    margin: 0 40px;
+  }
+  .navbar .logo {
+    width: 140px;
+  }
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    margin: 0 20px;
+  }
+  .navbar-manu {
+    gap: 15px;
+    font-size: 16px;
+  }
+  .navbar-right button {
+    padding: 8px 20px;
+    font-size: 15px;
+  }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 750px) {
+  .navbar-manu {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: white;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    display: none;
+  }
+
+  .navbar-manu.show {
+    display: flex;
+  }
+
+  .navbar-right button {
+    padding: 6px 18px;
+    font-size: 14px;
+  }
+}

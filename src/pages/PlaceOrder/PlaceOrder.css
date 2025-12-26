@@ -1,0 +1,119 @@
+.place-order {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 50px;
+  margin-top: 100px;
+  padding: 0px 90px;
+  margin-top: 20px;
+}
+
+/* LEFT */
+.place-order-left {
+  width: 100%;
+  max-width: 500px;
+}
+
+.place-order-left .title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* RIGHT */
+.place-order-right {
+  width: 100%;
+  max-width: 600px;
+}
+
+.place-order-right .title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+/* INPUTS */
+.place-order input {
+  margin-bottom: 15px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #c5c5c5;
+  border-radius: 4px;
+  outline-color: tomato;
+}
+
+/* MULTI INPUT ROW */
+.multi-fields {
+  display: flex;
+  gap: 10px;
+}
+
+/* CART TOTAL */
+.cart-total {
+  border: 1px solid #e2e2e2;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.cart-total-details {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.cart-total button {
+  width: 100%;
+  padding: 12px;
+  background-color: tomato;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.cart-total button:hover {
+  background-color: #e64b2e;
+}
+/* ===================== */
+/* 📱 MOBILE VIEW */
+/* ===================== */
+
+@media (max-width: 768px) {
+  .place-order {
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 20px;
+  }
+
+  .place-order-left,
+  .place-order-right {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .place-order-left .title,
+  .place-order-right .title {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .multi-fields {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .cart-total {
+    padding: 15px;
+  }
+
+  .cart-total h2 {
+    text-align: center;
+  }
+
+  .cart-total button {
+    font-size: 15px;
+    padding: 10px;
+  }
+}
+ 

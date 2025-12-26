@@ -1,0 +1,31 @@
+.food-display {
+    margin-top: 30px;
+    margin-left: 8vw;
+    margin-right: 8vw;
+}
+
+.food-display h2 {
+    font-size: max(2vw, 16px);   /* ✅ FIX */
+    font-weight: 600;
+}
+
+.food-display-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    margin-top: 30px;
+    gap: 30px;
+    row-gap: 50px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .food-display {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .food-display h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+}
