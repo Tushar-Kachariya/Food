@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import './FoodItem.css'
 import { assets } from '../../assets/frontend_assets/assets'
 import { StoreContext } from '../context/StoreContext'
+import { formatINR } from '../../utils/currency'
 
 export default function FoodItem({ id, name, price, description, image }) {
   const { cartItems, addToCart, removeFromCart } = useContext(StoreContext);
@@ -44,7 +45,7 @@ export default function FoodItem({ id, name, price, description, image }) {
         </div>
 
         <p className="food-item-desc">{description}</p>
-        <p className="food-item-price">${price}</p>
+        <p className="food-item-price">{formatINR(price)}</p>
       </div>
     </div>
   )
