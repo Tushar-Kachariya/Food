@@ -8,8 +8,7 @@ export default function Header() {
             <div className="header-content">
                 <h2>Order your favourite food here</h2>
                 <p>
-                    Choose from a diverse menu featuring a delectable array of dishes
-                    crafted with the finest ingredients.
+                   Explore our menu filled with a variety of delicious dishes made with fresh and high-quality ingredients.
                 </p>
                 <button>View Menu</button>
             </div>

@@ -11,8 +11,7 @@ export default function Footer() {
         <div className="footer-content-left">
           <img src={assets.logo} alt="logo" />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Cumque nam, iste distinctio nesciunt eius repellendus.
+            Browse our menu and enjoy a variety of delicious dishes prepared with fresh, high-quality ingredients.
           </p>
           <div className="footer-social-icon">
             <img src={assets.facebook_icon} alt="facebook" />
@@ -33,7 +32,7 @@ export default function Footer() {
         <div className="footer-content-right">
           <h2>GET IN TOUCH</h2>
           <ul>
-            <li>+1-212-233-4569</li>
+            <li>+91 8347132400</li>
             <li>contact@tometo.com</li>
           </ul>
         </div>

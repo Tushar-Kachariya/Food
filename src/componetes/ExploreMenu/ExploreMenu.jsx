@@ -8,8 +8,7 @@ export default function ExploreMenu({ category, setCategory }) {
       <h1>Explore our menu</h1>
 
       <p className="explore-menu-text">
-        Choose from a diverse menu featuring a delectable array of dishes
-        crafted with the finest ingredients.
+        Explore our menu filled with a variety of delicious dishes made with fresh and high-quality ingredients.
       </p>
 
       <div className="explore-menu-list">
