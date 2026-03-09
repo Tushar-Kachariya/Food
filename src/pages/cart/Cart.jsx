@@ -1,7 +1,6 @@
 import React, { useContext } from 'react'
 import './Cart.css'
 import { StoreContext } from '../../componetes/context/StoreContext'
-import { formatINR } from '../../utils/currency'
 import { useNavigate } from 'react-router-dom';
 
 export default function Cart() {
@@ -38,9 +37,9 @@ export default function Cart() {
               <div className='cart-item-title cart-items-item'>
                 <img src={item.image} alt={item.name} />
                 <p>{item.name}</p>
-                <p>{formatINR(item.price)}</p>
+                <p>{`₹${Number(item.price).toFixed(2)}`}</p>
                 <p>{cartItems[item._id]}</p>
-                <p>{formatINR(item.price * cartItems[item._id])}</p>
+                <p>{`₹${Number(item.price * cartItems[item._id]).toFixed(2)}`}</p>
                 <p
                   className="corss"
                   onClick={() => removeFromCart(item._id)}
@@ -60,21 +59,21 @@ export default function Cart() {
 
           <div className='cart-total-details'>
             <p>Sub Total</p>
-            <p>{formatINR(getTotalCartAmount())}</p>
+            <p>{`₹${Number(getTotalCartAmount()).toFixed(2)}`}</p>
           </div>
 
           <hr />
 
           <div className='cart-total-details'>
             <p>Delivery fees</p>
-            <p>{formatINR(deliveryFee)}</p>
+            <p>{`₹${Number(deliveryFee).toFixed(2)}`}</p>
           </div>
 
           <hr />
 
           <div className='cart-total-details'>
             <b>Total</b>
-            <b>{formatINR(getTotalCartAmount() + deliveryFee)}</b>
+            <b>{`₹${Number(getTotalCartAmount() + deliveryFee).toFixed(2)}`}</b>
           </div>
 
           <button onClick={() => navigate('/order')}>

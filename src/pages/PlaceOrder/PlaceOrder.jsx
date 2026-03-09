@@ -1,6 +1,5 @@
 import React, { useContext } from 'react'
 import { StoreContext } from '../../componetes/context/StoreContext'
-import { formatINR } from '../../utils/currency'
 import './PlaceOrder.css'
 
 export default function PlaceOrder() {
@@ -46,21 +45,21 @@ export default function PlaceOrder() {
 
           <div className="cart-total-details">
             <p>Sub Total</p>
-            <p>{formatINR(subTotal)}</p>
+            <p>{`₹${Number(subTotal).toFixed(2)}`}</p>
           </div>
 
           <hr />
 
           <div className="cart-total-details">
             <p>Delivery Fees</p>
-            <p>{formatINR(deliveryFee)}</p>
+            <p>{`₹${Number(deliveryFee).toFixed(2)}`}</p>
           </div>
 
           <hr />
 
           <div className="cart-total-details">
             <b>Total</b>
-            <b>{formatINR(total)}</b>
+            <b>{`₹${Number(total).toFixed(2)}`}</b>
           </div>
 
           <button type="submit">Proceed to Payment</button>

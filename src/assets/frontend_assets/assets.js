@@ -98,7 +98,7 @@ export const food_list = [
     _id: "1",
     name: "Greek Salad",
     image: food_1,
-    price: 12,
+    price: 180,
     description: "A fresh and healthy Greek salad made with crisp vegetables and flavorful dressing.",
     category: "Salad"
   },
@@ -106,7 +106,7 @@ export const food_list = [
     _id: "2",
     name: "Veg Salad",
     image: food_2,
-    price: 18,
+    price: 150,
     description: "A refreshing vegetable salad prepared with fresh ingredients.",
     category: "Salad"
   },
@@ -114,7 +114,7 @@ export const food_list = [
     _id: "3",
     name: "Clover Salad",
     image: food_3,
-    price: 16,
+    price: 170,
     description: "A nutritious salad packed with fresh vegetables and herbs.",
     category: "Salad"
   },
@@ -122,7 +122,7 @@ export const food_list = [
     _id: "4",
     name: "Chicken Salad",
     image: food_4,
-    price: 24,
+    price: 220,
     description: "A protein-rich salad made with tender chicken and fresh greens.",
     category: "Salad"
   },
@@ -131,7 +131,7 @@ export const food_list = [
     _id: "5",
     name: "Lasagna Rolls",
     image: food_5,
-    price: 14,
+    price: 240,
     description: "Delicious rolls stuffed with creamy lasagna filling.",
     category: "Rolls"
   },
@@ -139,7 +139,7 @@ export const food_list = [
     _id: "6",
     name: "Peri Peri Rolls",
     image: food_6,
-    price: 12,
+    price: 180,
     description: "Spicy peri-peri flavored rolls with rich seasoning.",
     category: "Rolls"
   },
@@ -147,7 +147,7 @@ export const food_list = [
     _id: "7",
     name: "Chicken Rolls",
     image: food_7,
-    price: 20,
+    price: 200,
     description: "Juicy chicken wrapped in soft rolls with flavorful spices.",
     category: "Rolls"
   },
@@ -155,7 +155,7 @@ export const food_list = [
     _id: "8",
     name: "Veg Rolls",
     image: food_8,
-    price: 15,
+    price: 160,
     description: "Soft rolls filled with delicious mixed vegetables.",
     category: "Rolls"
   },
@@ -164,7 +164,7 @@ export const food_list = [
     _id: "9",
     name: "Ripple Ice Cream",
     image: food_9,
-    price: 14,
+    price: 120,
     description: "Creamy ice cream with delightful ripple flavors.",
     category: "Desserts"
   },
@@ -172,7 +172,7 @@ export const food_list = [
     _id: "10",
     name: "Fruit Ice Cream",
     image: food_10,
-    price: 22,
+    price: 140,
     description: "Sweet and refreshing fruit-flavored ice cream.",
     category: "Desserts"
   },
@@ -180,7 +180,7 @@ export const food_list = [
     _id: "11",
     name: "Jar Ice Cream",
     image: food_11,
-    price: 10,
+    price: 110,
     description: "Delicious ice cream served in a stylish jar.",
     category: "Desserts"
   },
@@ -188,7 +188,7 @@ export const food_list = [
     _id: "12",
     name: "Vanilla Ice Cream",
     image: food_12,
-    price: 12,
+    price: 100,
     description: "Classic vanilla ice cream with smooth creamy texture.",
     category: "Desserts"
   },
@@ -197,7 +197,7 @@ export const food_list = [
     _id: "13",
     name: "Chicken Sandwich",
     image: food_13,
-    price: 12,
+    price: 190,
     description: "A tasty sandwich filled with juicy chicken and fresh veggies.",
     category: "Sandwich"
   },
@@ -205,7 +205,7 @@ export const food_list = [
     _id: "14",
     name: "Vegan Sandwich",
     image: food_14,
-    price: 18,
+    price: 170,
     description: "A healthy vegan sandwich packed with fresh vegetables.",
     category: "Sandwich"
   },
@@ -213,7 +213,7 @@ export const food_list = [
     _id: "15",
     name: "Grilled Sandwich",
     image: food_15,
-    price: 16,
+    price: 180,
     description: "Crispy grilled sandwich with delicious fillings.",
     category: "Sandwich"
   },
@@ -221,7 +221,7 @@ export const food_list = [
     _id: "16",
     name: "Bread Sandwich",
     image: food_16,
-    price: 24,
+    price: 150,
     description: "A simple yet tasty sandwich with fresh ingredients.",
     category: "Sandwich"
   },
@@ -230,7 +230,7 @@ export const food_list = [
     _id: "17",
     name: "Cup Cake",
     image: food_17,
-    price: 14,
+    price: 120,
     description: "Soft and fluffy cupcake topped with sweet frosting.",
     category: "Cake"
   },
@@ -238,7 +238,7 @@ export const food_list = [
     _id: "18",
     name: "Vegan Cake",
     image: food_18,
-    price: 12,
+    price: 150,
     description: "A delicious plant-based cake made with natural ingredients.",
     category: "Cake"
   },
@@ -246,7 +246,7 @@ export const food_list = [
     _id: "19",
     name: "Butterscotch Cake",
     image: food_19,
-    price: 20,
+    price: 220,
     description: "Rich and creamy butterscotch flavored cake.",
     category: "Cake"
   },
@@ -254,7 +254,7 @@ export const food_list = [
     _id: "20",
     name: "Sliced Cake",
     image: food_20,
-    price: 15,
+    price: 130,
     description: "Soft and moist cake slices perfect for dessert.",
     category: "Cake"
   },
@@ -263,7 +263,7 @@ export const food_list = [
     _id: "21",
     name: "Garlic Mushroom",
     image: food_21,
-    price: 14,
+    price: 210,
     description: "Flavorful garlic mushrooms cooked with aromatic spices.",
     category: "Pure Veg"
   },
@@ -271,7 +271,7 @@ export const food_list = [
     _id: "22",
     name: "Fried Cauliflower",
     image: food_22,
-    price: 22,
+    price: 200,
     description: "Crispy fried cauliflower with savory seasoning.",
     category: "Pure Veg"
   },
@@ -279,7 +279,7 @@ export const food_list = [
     _id: "23",
     name: "Mix Veg Pulao",
     image: food_23,
-    price: 10,
+    price: 160,
     description: "Aromatic rice dish cooked with fresh vegetables.",
     category: "Pure Veg"
   },
@@ -287,7 +287,7 @@ export const food_list = [
     _id: "24",
     name: "Rice Zucchini",
     image: food_24,
-    price: 12,
+    price: 150,
     description: "Light and healthy rice cooked with zucchini.",
     category: "Pure Veg"
   },
@@ -296,7 +296,7 @@ export const food_list = [
     _id: "25",
     name: "Cheese Pasta",
     image: food_25,
-    price: 12,
+    price: 220,
     description: "Creamy pasta loaded with melted cheese.",
     category: "Pasta"
   },
@@ -304,7 +304,7 @@ export const food_list = [
     _id: "26",
     name: "Tomato Pasta",
     image: food_26,
-    price: 18,
+    price: 200,
     description: "Classic pasta cooked with rich tomato sauce.",
     category: "Pasta"
   },
@@ -312,7 +312,7 @@ export const food_list = [
     _id: "27",
     name: "Creamy Pasta",
     image: food_27,
-    price: 16,
+    price: 230,
     description: "Smooth and creamy pasta with flavorful herbs.",
     category: "Pasta"
   },
@@ -320,7 +320,7 @@ export const food_list = [
     _id: "28",
     name: "Chicken Pasta",
     image: food_28,
-    price: 24,
+    price: 260,
     description: "Delicious pasta served with tender chicken pieces.",
     category: "Pasta"
   },
@@ -329,7 +329,7 @@ export const food_list = [
     _id: "29",
     name: "Butter Noodles",
     image: food_29,
-    price: 14,
+    price: 180,
     description: "Soft noodles tossed in rich buttery flavor.",
     category: "Noodles"
   },
@@ -337,7 +337,7 @@ export const food_list = [
     _id: "30",
     name: "Veg Noodles",
     image: food_30,
-    price: 12,
+    price: 160,
     description: "Stir-fried noodles with fresh vegetables.",
     category: "Noodles"
   },
@@ -345,7 +345,7 @@ export const food_list = [
     _id: "31",
     name: "Somen Noodles",
     image: food_31,
-    price: 20,
+    price: 200,
     description: "Japanese style thin noodles with delicate flavor.",
     category: "Noodles"
   },
@@ -353,7 +353,7 @@ export const food_list = [
     _id: "32",
     name: "Cooked Noodles",
     image: food_32,
-    price: 15,
+    price: 170,
     description: "Hot and flavorful noodles prepared with spices.",
     category: "Noodles"
   },
@@ -361,7 +361,7 @@ export const food_list = [
     _id: "33",
     name: "Misal Pav",
     image: food_32,
-    price: 23,
+    price: 140,
     description: "A popular spicy Maharashtrian street food served with pav.",
     category: "Pure Veg"
   }
