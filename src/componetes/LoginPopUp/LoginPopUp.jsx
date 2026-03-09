@@ -1,10 +1,14 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './LoginPopUp.css'
 import { assets } from '../../assets/frontend_assets/assets'
 
 export default function LoginPopUp({ setshowlogin }) {
 
-    const [currState, setCurrstate] = useState("Login")
+    const [currState, setCurrstate] = useState("Login");
+
+    useEffect(()=>{
+
+    })
 
     return (
         <div className='login-popup'>

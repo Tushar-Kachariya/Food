@@ -7,7 +7,6 @@ import { StoreContext } from '../context/StoreContext'
 export default function Navbar({ setshowlogin }) {
   const [menu, setmenu] = useState("home");
 
-  // ✅ CORRECT FUNCTION NAME
   const { getTotalCartAmount } = useContext(StoreContext);
 
   return (
@@ -19,7 +18,6 @@ export default function Navbar({ setshowlogin }) {
       <ul className='navbar-manu'>
         <Link to='/' onClick={() => setmenu("home")} className={menu === "home" ? "active" : ""}>Home</Link>
         <a href='#explore-menu' onClick={() => setmenu("menu")} className={menu === "menu" ? "active" : ""}>Menu</a>
-        <a href='#app-download' onClick={() => setmenu("mobile-app")} className={menu === "mobile-app" ? "active" : ""}>Mobile App</a>
         <a href='#footer' onClick={() => setmenu("contact-us")} className={menu === "contact-us" ? "active" : ""}>Contact Us</a>
       </ul>
 
@@ -31,7 +29,6 @@ export default function Navbar({ setshowlogin }) {
             <img src={assets.basket_icon} alt="cart" />
           </Link>
 
-          {/* ✅ SAFE CHECK */}
           <div className={getTotalCartAmount() === 0 ? "" : "dot"}></div>
         </div>
 

@@ -7,7 +7,6 @@ const StoreContextProvider = ({ children }) => {
 
   const [cartItems, setCartItems] = useState({});
 
-  // ADD TO CART
   const addToCart = (itemId) => {
     setCartItems(prev => ({
       ...prev,
@@ -15,7 +14,6 @@ const StoreContextProvider = ({ children }) => {
     }));
   };
 
-  // REMOVE FROM CART
   const removeFromCart = (itemId) => {
     setCartItems(prev => {
       if (!prev[itemId]) return prev;
@@ -32,7 +30,6 @@ const StoreContextProvider = ({ children }) => {
     });
   };
 
-  // ✅ CORRECT FUNCTION
   const getTotalCartAmount = () => {
     let totalAmount = 0;
     for (const itemId in cartItems) {
@@ -44,7 +41,6 @@ const StoreContextProvider = ({ children }) => {
     return totalAmount;
   };
 
-  // ✅ EXPORT CORRECT NAME
   const contextValue = {
     food_list,
     cartItems,

@@ -16,14 +16,14 @@ export default function FoodItem({ id, name, price, description, image }) {
             className="add"
             src={assets.add_icon_white}
             alt=""
-            onClick={() => addToCart(id)}   // ✅ FUNCTION
+            onClick={() => addToCart(id)}   
           />
         ) : (
           <div className="food-item-counter">
             <img
               src={assets.remove_icon_red}
               alt=""
-              onClick={() => removeFromCart(id)} // ✅ FUNCTION
+              onClick={() => removeFromCart(id)} 
             />
 
             <p>{cartItems[id]}</p>
@@ -31,7 +31,7 @@ export default function FoodItem({ id, name, price, description, image }) {
             <img
               src={assets.add_icon_green}
               alt=""
-              onClick={() => addToCart(id)} // ✅ FUNCTION
+              onClick={() => addToCart(id)} 
             />
           </div>
         )}
